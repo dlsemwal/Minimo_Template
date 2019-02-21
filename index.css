@@ -1,0 +1,187 @@
+/*external css of minimo*/
+* {
+	box-sizing: border-box;
+	font-family: georgia;
+}
+body {
+	margin: 0;
+}
+header {
+	width: 85%;
+    margin: 0 auto;
+    padding-top: 35px;
+    overflow: hidden;
+}
+header > img {
+	float: left;
+}
+header > .head {
+	float: right;
+    width: 85%;
+    padding: 3px;
+    margin-bottom: 50px;
+}
+header > .head > ul {
+	list-style-type: none;
+	margin: 0;
+}
+header > .head  li {
+    float: right;
+    margin-left: 7%
+}
+.slide {
+	width: 85%;
+    margin: 0 auto;
+    background-image: url(images/output-164.png);
+    height: 730px;
+    animation-name: slideshow;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1,0,0,1);
+    background-position: center;
+    background-size: cover;
+}
+@keyframes slideshow {
+	0%	 {background-image: url(images/output-164.png);}
+	25%  {background-image: url(images/output-3.png); }
+	75%  {background-image: url(images/output-5.png); }
+	100% {background-image: url(images/output-7.png); }
+
+}
+.slide img {
+	width: 100%;
+}
+section {
+	width: 85%;
+    margin: 0 auto;
+    padding: 45px;
+}
+section img {
+	display: block;
+	margin: 35px 0;
+	max-width: 100%;
+}
+section textarea {
+	display: block;
+    width: 100%;
+    border: none;
+    height: 50px;
+    margin-top: 50px;
+    background-image: url(images/output-159.png);
+    background-repeat: no-repeat;
+}
+article {
+	width: 85%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+article .gallery {
+	width: 49.4%;
+	padding: 0 2% 5% 0;
+	float: left;
+}
+article .gallery2 {
+	width: 50%;
+	padding: 0 0 5% 2%;
+	float: left;
+}
+
+article img:not(.gal) {
+	max-width: 100%;
+	display: block;
+	margin-bottom: 6%;
+}
+article .gal {
+	width: 100%;
+	display: block;
+	margin-bottom: 6%;
+}
+aside {
+	background-color: #f2f2f2;
+	text-align: center;
+    padding: 7%;
+    margin-bottom: 75px;
+}
+aside img {
+	max-width: 70%;
+	margin: 0px auto 50px;
+	display: block;
+}
+aside input, aside input:focus {
+    padding: 5px;
+    border-width: 0 0 2px 0;
+    border-bottom: 2px solid black;
+    background-color: #f2f2f2;
+    background-image: url(images/output-109.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 30%;
+    font-size: 16px;
+    outline: none;
+}
+input:autofill:active {
+background-color: #f2f2f2;
+background-image: url(images/output-109.png);
+color: rgb(0, 0, 0);
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+-webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+
+    /*-webkit-box-shadow: 0 0 0 30px #f2f2f2 inset;
+    background-image: url(images/output-109.png);*/
+}
+@-webkit-keyframes autofill {
+    to {
+        background: transparent;
+        background-image: url(images/output-109.png);
+        background-repeat: no-repeat;
+    	background-position: right;
+    }
+}
+p {
+	opacity: .7;
+}
+ .btn {
+	padding: 50px;
+	text-align: center;
+}
+ .btn .lm {
+	display: inline-block;
+	border: 1px solid #333;
+	padding: 15px 30px;
+}
+/*css co pleted of minimo*/
+@media  only screen and (max-width: 500px) {
+	article .gallery {
+		width: 100%
+	}
+	article .gallery2 {
+		width: 100%
+	}
+	section, header .head, header .head {
+		width: 100%;
+	}
+	header .head, header .head li, header img, header ul {
+		display: inline-block;
+		float: none;
+		padding: 0;
+		margin: 5px;
+	}
+	aside input {
+		width: 75%;
+	}
+}
+@media  only screen and (max-width: 800px) {
+	aside input {
+		width: 55%;
+	}
+}
+@media  only screen and (max-width: 430px) {
+	aside input {
+		width: 90%;
+	}
+}
